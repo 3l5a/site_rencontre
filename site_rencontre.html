@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site de rencontre</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend><i>S'inscrire</i></legend>
+        <div>
+          <label for="nom">Nom :</label>
+          <input
+            type="text"
+            name=""
+            id="nom"
+            min="2"
+            max="45"
+            pattern="[\D]*"
+          />
+        </div>
+        <div>
+          <label for="prenom">Prénom :</label>
+          <input type="text" name="" id="prenom" min="2" max="45" />
+        </div>
+        <div>
+          <label for="admail">E-mail :</label>
+          <input
+            type="email"
+            name=""
+            id="admail"
+            placeholder="ex: nom@site.fr"
+            pattern="^.+\@([a-z-])+([\.com|\.fr|\.net|\.org]+)"
+          />
+        </div>
+        <div>
+          <label for="sexe">Sexe :</label>
+          <input type="radio" name="sexe" id="m" />
+          <label for="m">Masculin</label>
+          <input type="radio" name="sexe" id="f" checked />
+          <label for="f">Féminin</label>
+        </div>
+        <div>
+          <label for="photo">Votre photo :</label>
+          <input
+            type="file"
+            name=""
+            id="photo"
+            accept="image/png, image/jpeg"
+          />
+        </div>
+        <div>
+          <label for="pays">Pays :</label>
+          <select name="" id="pays">
+            <option value="1">FRANCE</option>
+            <option value="2">ANGLETERRE</option>
+            <option value="3" selected>ALLEMAGNE</option>
+            <option value="4">ITALIE</option>
+            <option value="5">SUISSE</option>
+            <option value="6">ESPAGNE</option>
+          </select>
+        </div>
+        <div>
+          <label for="langues">Langues parlées :</label>
+          <select name="" id="langues" multiple>
+            <option value="1">français</option>
+            <option value="2">anglais</option>
+            <option value="3" selected>allemand</option>
+            <option value="4">italien</option>
+            <option value="5">espagnol</option>
+          </select>
+        </div>
+        <div>
+          <label for="langues">Domaine d'activité :</label>
+          <input type="checkbox" name="" id="d1" />
+          <label for="d1">Plombier</label>
+          <input type="checkbox" name="" id="d2" />
+          <label for="d2">Electricien</label>
+          <input type="checkbox" name="" id="d3" />
+          <label for="d3">Maçon</label>
+          <input type="checkbox" name="" id="d4" />
+          <label for="d4">Carreleur</label>
+          <input type="checkbox" name="" id="d5" />
+          <label for="d5">Menuisier</label>
+          <input type="checkbox" name="" id="d6" />
+          <label for="d6">Couvreur</label>
+        </div>
+        <div>
+          <input type="submit" name="" id="" />
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
